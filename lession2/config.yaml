@@ -1,0 +1,15 @@
+currency_app:
+  url: "http://api.exchangeratesapi.io/v1/latest"
+  access_key: "381114cf116cbcfc4f05e4eb44625659"
+  symbols:
+    - ABC
+    - GBP
+    - USD
+    - JPY
+  directory: 'currency'
+
+app1:
+  test: test
+
+app2:
+  test2: test2

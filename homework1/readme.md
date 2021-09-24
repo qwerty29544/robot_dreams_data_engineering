@@ -1,4 +1,3 @@
-## Репозиторий по изучению курса **Data Engineering** от Robot Dreams
 ### Homework #1
 Домашняя работа №1 из {https://github.com/robot-dreams-code/Data-Engineering/tree/main/Homework_1}
 находится в папке /homework1.

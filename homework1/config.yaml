@@ -1,0 +1,31 @@
+API:
+  url: "https://robot-dreams-de-api.herokuapp.com"
+  endpoint: "/out_of_stock"
+  payload: {"date": "2021-09-09"}
+  headers: {"content-type": "application/json", "Authorization": "JWT token"}
+  auth: JWT <jwt_token>
+  output type: JSON
+  expected output:
+    [
+      {
+        "product_id": 47066,
+        "date": "2021-01-02"
+      },
+      {
+        "product_id": 35855,
+        "date": "2021-01-02"
+      },
+        ...
+    ]
+  dir path: "c:\\Users\\MariaRemark\\PycharmProjects\\robot_dreams_data_engineering\\"
+
+AUTH:
+  url: "https://robot-dreams-de-api.herokuapp.com"
+  endpoint: "/auth"
+  headers: {"content-type": "application/json"}
+  payload: {"username": "rd_dreams", "password": "djT6LasE"}
+  output type: TOKEN
+  expected output:
+    {
+      "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTc4ODMwODMsImlhdCI6MTYxNzg4Mjc4MywibmJmIjoxNjE3ODgyNzgzLCJpZGVudGl0eSi6MX0.-6m9MzmbBN1H9yGdtH799YZMiKuumgx-rwit_HllxyQ"
+    }

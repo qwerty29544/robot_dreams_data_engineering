@@ -6,6 +6,10 @@ import json
 from common.get_json_data import get_json_data
 
 
+log_info = {"username": "rd_dreams", "password": "djT6LasE"}
+headers_auth = {"content-type": "application/json"}
+
+
 default_args = {
     'owner': 'Yurchenkov Ivan',
     'email': ['yurchenkov@mirea.ru'],
@@ -30,8 +34,8 @@ t1 = SimpleHttpOperator(
     method='POST',
     # TODO: можно ли здесь читать что-то из конфига, или это не нужно
     # Логика была бы в изолированности данных от кода, а то я тут некрасиво кидаю сюда пароль с логином
-    data=json.dumps({"username": "rd_dreams", "password": "djT6LasE"}),
-    headers={"content-type": "application/json"},
+    data=json.dumps(log_info),
+    headers=headers_auth,
     xcom_push=True,         # Кидаю токен в xcom_push
     dag=dhop_api_dag
 )

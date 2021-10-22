@@ -2,7 +2,7 @@
 
 ## Подзадача №1. Запрос данных из API при помощи инструментов Airflow
 
-Выполненная подзадача №1 Находится в папке /homework1/
+Выполненная подзадача №1 Находится в папке /homework1/  https://github.com/qwerty29544/robot_dreams_data_engineering/tree/main/lession7/homework1
 
 Файл dshop_api_dag.py - даг файл для задачи. Внутри имеется две таски:
  1. t1 - http operator для таски по запросу api token. 
@@ -13,7 +13,7 @@
 
 ## Подзадача №2. Дамп данных из бд при помощи инструментов Airflow
 
-Выполненная подзадача №2 Находится в папке /homework2/
+Выполненная подзадача №2 Находится в папке /homework2/  https://github.com/qwerty29544/robot_dreams_data_engineering/tree/main/lession7/homework2
 
 Файл dump_postgres_dag.py - даг файл для задачи. Внутри список тасок для каждой из таблиц в базе dshop:
  1. postgres_tasks - python operator который принимает путь к файлу и sql запрос на копирование. 
